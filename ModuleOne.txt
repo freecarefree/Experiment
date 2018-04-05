@@ -1,2 +1,16 @@
 Microsoft Professional Orientation : Front End Web Development
 Erika Johnson
+
+=====
+Visit http://html5test.com
+
+Scroll through the page and note the supported aspects of the browser
+
+Visit quirksmode.org and investigate some the current compatibility tables which list the major browsers and versions
+
+Visit http://www.w3.org/standards/webdesign/. On this page, you will find links to the standards set forth by the W3C, the organization tasked with managing the standards for HTML and CSS.
+
+Click the HTML & CSS link and review the material listed for these two web technologies.
+
+While you don't need to read the specification or be an expert on it, visit http://www.ecma-international.org/publications/standards/Ecma-262.htm to learn more about what ECMA is and how it relates to JavaScript and the JavaScript standard.
+====
