@@ -14,3 +14,7 @@ Click the HTML & CSS link and review the material listed for these two web techn
 
 While you don't need to read the specification or be an expert on it, visit http://www.ecma-international.org/publications/standards/Ecma-262.htm to learn more about what ECMA is and how it relates to JavaScript and the JavaScript standard.
 ====
+
+Notepad++ for windows
+
+Sublime3 for macOS and Windows
