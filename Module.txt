@@ -42,3 +42,7 @@ Escapes: use characters rather than escapes (e.g. &#xE1; &#225; or &aacute;) whe
 Forms: use UTF-8 on both form and server. Support local formats of names/addresses, times/dates, etc.
 Localizable styling: use CSS styling for the presentational aspects of your page. So that it's easy to adapt content to suit the typographic needs of the audience, keep a clear separation between styling and semantic content, and don't use 'presentational' markup.
 Images, animations & examples: if your content will be seen by people from diverse cultures, check for translatability and inappropriate cultural bias.
+
+
+====
+These elements, without a "/" at the end, are called "void elements". They are : area, base, br, col, embed, hr, img, input, link, menuitem, meta, param, source, track, wbr.
