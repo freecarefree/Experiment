@@ -18,3 +18,16 @@ While you don't need to read the specification or be an expert on it, visit http
 Notepad++ for windows
 
 Sublime3 for macOS and Windows
+
+=======
+
+http://jsbin.com/?html,output  good resource, like codepen
+
+W3C validators
+W3C Developers home pageFor over 15 years, the W3C has been developing and hosting free and open source tools used every day by millions of Web developers and Web designers. All the tools listed below are Web-based, and are available as downloadable sources or as free services on the W3C Developers tools site.
+
+https://www.w3.org/2009/cheatsheet/  
+provides quick access to useful information from a variety of specifications published by W3C.
+
+https://www.w3.org/WAI/eval/preliminary#media
+
