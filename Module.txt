@@ -63,3 +63,9 @@ D3.js is a JavaScript library for manipulating documents based on data. D3 helps
 ====
 AWS Cloud9
 https://aws.amazon.com/cloud9/?origin=c9io
+
+=======
+
+===== NOW I AM ON WIN10 PC LOL =====
+
+
