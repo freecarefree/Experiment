@@ -67,6 +67,9 @@ https://aws.amazon.com/cloud9/?origin=c9io
 =======
 
 ===== NOW I AM ON WIN10 PC LOL =====
+// <body onload="init();"/>
+// window.addEventListener('load', init);
+
 window.onload = init;
 
 function init() {
