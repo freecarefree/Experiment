@@ -67,6 +67,8 @@ https://aws.amazon.com/cloud9/?origin=c9io
 =======
 
 ===== NOW I AM ON WIN10 PC LOL =====
+window.onload = init;
+
 function init() {
   var status = document.querySelector('#pageStatus');
   status.innerHTML = 'LOADED!';
