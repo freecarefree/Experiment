@@ -88,3 +88,11 @@ function init() {
       progressBar.style.width = percent + "%";
   });
 
+
+<input type="text" 
+         name="nom" 
+         maxlength="32" 
+         required
+         oninput = "validateName(this)" onselect = "myFunction(event)">
+
+// “this” and “event” have meaning behind them. have to be this way!!!
