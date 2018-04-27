@@ -105,4 +105,13 @@ For slider:
           step=0.1
          oninput = "doSomething(event)">   oninput and onchange are different!
 
+Event object
+Most useful common properties:
 
+type	Returns the name of the event
+target	Returns the element that triggered the event
+
+Most useful common methods:
+
+preventDefault()	Cancels the event if it is cancelable, meaning that the default 			action that belongs to the event will not occur
+stopPropagation()	Prevents further propagation of an event during event flow
