@@ -115,3 +115,5 @@ Most useful common methods:
 
 preventDefault()	Cancels the event if it is cancelable, meaning that the default 			action that belongs to the event will not occur
 stopPropagation()	Prevents further propagation of an event during event flow
+
+- In JavaScript, the DOM is accessible through the property document of the global object window. We rarely manipulate the window object directly as it is implicit: window.document is the same as document. 
