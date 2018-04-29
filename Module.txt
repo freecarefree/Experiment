@@ -140,3 +140,11 @@ Example: var list = document.getElementByClassName('important'); is equivalent t
 
 Notice that identifier, tagName and className must be of type String. 
 
+
+
+- // get the li parent of the current selected input
+    var liParent = elm.parentNode;
+    // add the CSS class .checked
+    liParent.classList.add("checked");
+
+ 
