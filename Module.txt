@@ -147,4 +147,6 @@ Notice that identifier, tagName and className must be of type String.
     // add the CSS class .checked
     liParent.classList.add("checked");
 
- 
+-Properties that can be used to change the value of selected DOM node
+Using the innerHTML property
+Using the textContent property
