@@ -150,3 +150,11 @@ Notice that identifier, tagName and className must be of type String.
 -Properties that can be used to change the value of selected DOM node
 Using the innerHTML property
 Using the textContent property
+
+- Best practice when using the canvas:
+
+Use a function that is called AFTER the page is fully loaded (and the DOM is ready), select the canvas in the DOM (this is the init function (as in window.onload = init) we already saw many times).
+Then, get a 2D graphic context for this canvas (the context is an object we will use to draw on the canvas, to set global properties such as color, gradients, patterns and line width).
+Only then can you can draw something,
+Do not forget to use global variables for the canvas and context objects. I also recommend keeping the width and height of the canvas somewhere. These might be useful later.
+For each function that will change the context (color, line width, coordinate system, etc.), start by saving the context, and end by restoring it.
