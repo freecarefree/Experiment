@@ -159,6 +159,24 @@ Only then can you can draw something,
 Do not forget to use global variables for the canvas and context objects. I also recommend keeping the width and height of the canvas somewhere. These might be useful later.
 For each function that will change the context (color, line width, coordinate system, etc.), start by saving the context, and end by restoring it.
 
+-
+function drawFilledCircle(c) {
+    // GOOD practice: save the context, use 2D trasnformations
+    ctx.save();
+  
+    // translate the coordinate system, draw relative to it
+    ctx.translate(c.x, c.y);
+  
+    ctx.fillStyle = c.color;
+    // (0, 0) is the top left corner of the monster.
+    ctx.beginPath();
+    ctx.arc(0, 0, c.radius, 0, 2*Math.PI);
+    ctx.fill();
+ 
+    // GOOD practice: restore the context
+    ctx.restore();
+}
+
 ==
 window.onload = function init() {
     // called AFTER the page has been loaded
