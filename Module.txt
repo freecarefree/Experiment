@@ -212,4 +212,14 @@ function mainLoop() {
   requestAnimationFrame(mainLoop);
 }
 
+=
+function moveAllBalls(ballArray) {
+    // iterate on all balls in array
+    ballArray.forEach(function(b) {
+        // b is the current ball in the array
+        b.x += b.speedX;
+        b.y += b.speedY;
+        testCollisionBallWithWalls(b);
+    });
+}
 
