@@ -158,3 +158,40 @@ Then, get a 2D graphic context for this canvas (the context is an object we will
 Only then can you can draw something,
 Do not forget to use global variables for the canvas and context objects. I also recommend keeping the width and height of the canvas somewhere. These might be useful later.
 For each function that will change the context (color, line width, coordinate system, etc.), start by saving the context, and end by restoring it.
+
+==
+window.onload = function init() {
+    // called AFTER the page has been loaded
+    canvas = document.querySelector("#myCanvas");
+  
+    // often useful
+    w = canvas.width; 
+    h = canvas.height;  
+  
+    // important, we will draw with this object
+    ctx = canvas.getContext('2d');
+  
+    // ready to go !
+    mainLoop();
+};
+
+function mainLoop() {
+  // 1 - clear the canvas
+  ctx.clearRect(0, 0, w, h);
+  
+  // draw the ball and the player
+  drawFilledRectangle(player);
+  drawFilledCircle(ball1);
+  drawFilledCircle(ball2);
+  drawFilledCircle(ball3);
+
+  // animate the ball that is bouncing all over the walls
+  moveBall(ball1);
+  moveBall(ball2);
+  moveBall(ball3);
+  
+  // ask for a new animation frame
+  requestAnimationFrame(mainLoop);
+}
+
+
