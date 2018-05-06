@@ -223,3 +223,14 @@ function moveAllBalls(ballArray) {
     });
 }
 
+==
+
+function getMousePos(canvas, evt) {
+   // necessary to take into account CSS boundaries
+   var rect = canvas.getBoundingClientRect();
+   return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+   };
+}
+
