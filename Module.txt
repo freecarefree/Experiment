@@ -233,4 +233,11 @@ function getMousePos(canvas, evt) {
       y: evt.clientY - rect.top
    };
 }
+==
+1 - Iterating using the forEach method
+The forEach method takes a single argument that is a function/callback that can have one, two or three parameters:
+
+The first parameter is the current element of the array,
+The second parameter (optional) is the index of the current element in the array,
+The third element is the array itself
 
