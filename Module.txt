@@ -1,4 +1,4 @@
-Microsoft Professional Orientation : Front End Web Development
+﻿Microsoft Professional Orientation : Front End Web Development
 Erika Johnson
 
 =====
@@ -240,4 +240,6 @@ The forEach method takes a single argument that is a function/callback that can 
 The first parameter is the current element of the array,
 The second parameter (optional) is the index of the current element in the array,
 The third element is the array itself
+
+--- company pc lol---- 
 
