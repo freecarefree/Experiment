@@ -1,4 +1,4 @@
-﻿Microsoft Professional Orientation : Front End Web Development
+Microsoft Professional Orientation : Front End Web Development
 Erika Johnson
 
 =====
@@ -242,4 +242,6 @@ The second parameter (optional) is the index of the current element in the array
 The third element is the array itself
 
 --- company pc lol---
+— ok, got it!—
+
 
