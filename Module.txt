@@ -289,3 +289,10 @@ function showPosition(position) {
  displayCoords.innerHTML="Latitude: " + position.coords.latitude + 
   "<br />Longitude: " + position.coords.longitude;	
 }
+
+—
+var geocoder = new google.maps.Geocoder();
+geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
+      function reverseGeocoderSuccess(results, status) {
+	…
+	}
