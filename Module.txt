@@ -296,3 +296,7 @@ geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
       function reverseGeocoderSuccess(results, status) {
 	…
 	}
+
+——
+https://howlerjs.com/ 
+howler.js makes working with audio in JavaScript easy and reliable across all platforms.
