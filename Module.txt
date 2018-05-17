@@ -300,3 +300,10 @@ geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
 ——
 https://howlerjs.com/ 
 howler.js makes working with audio in JavaScript easy and reliable across all platforms.
+
+—
+Properties correspond to an object's DNA (its characteristics), 
+and are nouns (age, name, etc.)
+
+Methods correspond to an object's behavior 
+and are verbs (bark, move, changeSpeed, etc.)
