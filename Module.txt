@@ -307,3 +307,13 @@ and are nouns (age, name, etc.)
 
 Methods correspond to an object's behavior 
 and are verbs (bark, move, changeSpeed, etc.)
+
+—
+function getMousePos(canvas, evt) {
+    // necessary work in the canvas coordinate system
+    var rect = canvas.getBoundingClientRect();
+    return {
+        x: evt.clientX - rect.left,
+        y: evt.clientY - rect.top
+    };
+}
