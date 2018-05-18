@@ -321,3 +321,5 @@ function getMousePos(canvas, evt) {
 -
 Static methods are called without instantiating their class 
 and can not be called through a class instance. 
+// static property definition is necessarily outside of the class with ES6
+Point.nbPointsCreated=0;
