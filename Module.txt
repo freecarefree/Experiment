@@ -317,3 +317,7 @@ function getMousePos(canvas, evt) {
         y: evt.clientY - rect.top
     };
 }
+
+-
+Static methods are called without instantiating their class 
+and can not be called through a class instance. 
