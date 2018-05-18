@@ -323,3 +323,6 @@ Static methods are called without instantiating their class
 and can not be called through a class instance. 
 // static property definition is necessarily outside of the class with ES6
 Point.nbPointsCreated=0;
+
+
+https://hacks.mozilla.org/2014/08/black-box-driven-development-in-javascript/
