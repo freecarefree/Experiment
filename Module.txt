@@ -329,3 +329,9 @@ https://hacks.mozilla.org/2014/08/black-box-driven-development-in-javascript/
 
 -
 In JavaScript, you can call a function BEFORE it has been declared in your source code. This is called "hoisting": it's like if all function declarations were moved to the top before being executed. It works and it's correct.
+
+-
+The static keyword defines a static method for a class.
+Static methods are called without instantiating their class and cannot be called through a class instance.
+Consequence: do not use instance properties in their body!
+Static methods are often used to create utility functions for an application
