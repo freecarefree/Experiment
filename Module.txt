@@ -326,3 +326,6 @@ Point.nbPointsCreated=0;
 
 
 https://hacks.mozilla.org/2014/08/black-box-driven-development-in-javascript/
+
+-
+In JavaScript, you can call a function BEFORE it has been declared in your source code. This is called "hoisting": it's like if all function declarations were moved to the top before being executed. It works and it's correct.
