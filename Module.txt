@@ -335,3 +335,9 @@ The static keyword defines a static method for a class.
 Static methods are called without instantiating their class and cannot be called through a class instance.
 Consequence: do not use instance properties in their body!
 Static methods are often used to create utility functions for an application
+
+-
+The Window Object. The window object is supported by all browsers. It represents the browser's window. All global JavaScript objects, functions, and variables automatically become members of the window object.
+
+However, at the top level of programs and functions, 
+let, unlike var, does not create a property on the global window object.
