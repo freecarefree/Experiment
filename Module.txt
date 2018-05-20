@@ -341,3 +341,14 @@ The Window Object. The window object is supported by all browsers. It represents
 
 However, at the top level of programs and functions, 
 let, unlike var, does not create a property on the global window object.
+
+-
+What are the datatypes in JavaScript?
+According to the latest ECMAScript release, these are the data types:
+Boolean.
+Null.
+Undefined.
+Number.
+String.
+Symbol.
+Object.
