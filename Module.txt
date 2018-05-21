@@ -361,3 +361,15 @@ slice: returns a sub-array without modifying the original array
 splice: modifies the array, it removes “a slice” and it also adds new elements
 push: appends an element at the end of the array and returns the new length
 pop: removes the last element and returns it
+
+The splice() method modifies the array: it removes “a slice” and also adds new elements
+The first two parameters are start and the number of elements to delete, the other parameters are the elements to add to the array to replace the slice that will be removed.
+
+Possible syntaxes:
+
+array.splice(start)
+array.splice(start, deleteCount)
+array.splice(start, deleteCount, item1, item2, ...)
+start: index at which to start changing the array (with origin 0)
+
+deleteCount: An integer indicating the number of old array elements to remove.
