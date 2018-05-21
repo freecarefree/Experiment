@@ -381,3 +381,20 @@ toExponential: force a number to use a scientific notation. For example var a=10
 
 s.split(' ').join('.......');
 "My.......name.......is.......Bond!.......James.......Bond!"
+
+-
+The TableRow object (<tr>)
+When you look for a row using the DOM API or the selector API, or when you create a row using the DOM API, you get a Row object:
+
+var row1 = document.getElementById("row1");
+ 
+var row1 = document.querySelector("#row1");
+ 
+var newRow = document.createElement("row"); // creates a new row
+
+Like all objects, a TableRow object has properties and methods. Here are the most useful ones:
+
+Most useful properties
+cells Returns a collection of all <td> or <th> elements in a table row
+rowIndex  Returns the position of a row in the rows collection of a table
+sectionRowIndex Returns the position of a row in the rows collection of a <tbody>, <thead>, or <tfoot>
