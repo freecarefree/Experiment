@@ -378,3 +378,6 @@ Methods useful for converting numbers: toFixed(), toExponential(), toString()
 toFixed: sets the number of digits for the decimal part of a number. 
 There is also another method, named toPrecision, that has a very close behavior, and can also return numbers in scientific notation. 
 toExponential: force a number to use a scientific notation. For example var a=1000; a.toExponential(); console.log(a); will give 1e+3
+
+s.split(' ').join('.......');
+"My.......name.......is.......Bond!.......James.......Bond!"
