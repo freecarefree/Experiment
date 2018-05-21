@@ -352,3 +352,12 @@ Number.
 String.
 Symbol.
 Object.
+
+-
+Most useful methods you can use on arrays: sort(), join(), slice(), splice(), push()and pop()
+sort: sort the elements in the array. Either alphabetically if they are strings, or in ascending order if they are numbers. There is also a way to sort the elements using other criteria, which is explained a bit further on in the course. With a call to var b = a.sort(), a is also sorted. The sort method sorts the array + returns it.
+join: adds a string between each element and returns the result as a string
+slice: returns a sub-array without modifying the original array
+splice: modifies the array, it removes “a slice” and it also adds new elements
+push: appends an element at the end of the array and returns the new length
+pop: removes the last element and returns it
