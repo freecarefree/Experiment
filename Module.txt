@@ -404,3 +404,14 @@ Since HTML5 provides functionalities to assist with accessibility, developers sh
 1 For every form field, ensure that a descriptive label is provided and use the <label> element to identify each form control.
 2 For larger or complex forms, use the <fieldset> and <legend> elements to respectively group and associate related form controls.
 
+What is JSON?
+JSON stands for JavaScript Object Notation. It's a standard for transforming nearly any object into a string representation that is human readable. It became a standard for exchanging data to/from a remote HTTP server, and is available for many other languages in addition to JavaScript.
+
+A JavaScript object o in JSON looks a lot like what o.toString() returns.
+
+There are two main methods to know:
+
+Transform any JavaScript object in JSON:                      
+var jsonStr = JSON.stringify(obj);
+Transform any JSON string into a JavaScript object:    
+var jsObj  = JSON.parse(jsonStr);
