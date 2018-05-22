@@ -429,3 +429,47 @@ JSON data from a REST WebService
 Most "big sites" provide what we call a REST API. This means "they propose to send/receive data to/from programs over HTTP", and most of the time the JSON format is one of the possible transport formats for the data. Google APIs, Facebook and Amazon APIs are like this.
 
 JSONPlaceholder is a free online REST service that you can use whenever you need some fake data in JSON. Faking a server is great for tutorials, and this is exactly what the next example does. 
+
+-
+JavaScript source code extract:
+
+function search() {
+    var queryURL = "https://jsonplaceholder.typicode.com/users";
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', queryURL, true);
+ 
+    // called when the response has arrived
+    xhr.onload = function(e) {
+        var jsonResponse = this.response;
+ 
+        // turn the response into a JavaScript object
+        var users = JSON.parse(jsonResponse);
+        displayUsersAsATable(users);
+    }
+    // in case of error
+    xhr.onerror = function(err) {
+        console.log("Error: " + err);
+    }
+    // sends the request
+    xhr.send();
+}
+-
+JavaScript source code extract:
+
+function search() {
+    var queryURL = "https://jsonplaceholder.typicode.com/users";
+    fetch(queryURL)
+      .then(function(response) {
+          // response is a json string,
+          // convert it to a pure JavaScript object
+          return response.json();
+      })
+      .then(function(users) {
+          // users is a JavaScript object here
+          displayUsersAsATable(users)
+      })
+      .catch(function(error) {
+          console.log('Error during fetch: ' + error.message);
+      });
+}
+The fetch API will also be covered in an advanced JavaScript course to come. In contrast to XhR2, fetch is based on a concept called "JavaScript promises" (also covered in the advanced course!). You recognize promises when you see ".then..." ".then...".
