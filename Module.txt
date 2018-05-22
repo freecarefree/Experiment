@@ -415,3 +415,12 @@ Transform any JavaScript object in JSON:
 var jsonStr = JSON.stringify(obj);
 Transform any JSON string into a JavaScript object:    
 var jsObj  = JSON.parse(jsonStr);
+
+-
+To avoid including inherited properties in your enumeration, check hasOwnProperty():
+
+for (var name in myObject) {
+  if (myObject.hasOwnProperty(name)) {
+    alert(name);
+  }
+}
