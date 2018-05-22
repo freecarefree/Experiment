@@ -424,3 +424,8 @@ for (var name in myObject) {
     alert(name);
   }
 }
+
+JSON data from a REST WebService
+Most "big sites" provide what we call a REST API. This means "they propose to send/receive data to/from programs over HTTP", and most of the time the JSON format is one of the possible transport formats for the data. Google APIs, Facebook and Amazon APIs are like this.
+
+JSONPlaceholder is a free online REST service that you can use whenever you need some fake data in JSON. Faking a server is great for tutorials, and this is exactly what the next example does. 
