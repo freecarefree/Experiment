@@ -473,3 +473,8 @@ function search() {
       });
 }
 The fetch API will also be covered in an advanced JavaScript course to come. In contrast to XhR2, fetch is based on a concept called "JavaScript promises" (also covered in the advanced course!). You recognize promises when you see ".then..." ".then...".
+
+-
+Indeed, Web Storage provides two interfaces - sessionStorage and localStorage - whose main difference is data longevity. This specification defines an API for persistent data storage of key-value pair data in Web clients.
+
+With localStorage the data will remain until it is deleted, whereas with sessionStorage the data is erased when the tab/browser is closed.
