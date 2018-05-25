@@ -478,3 +478,10 @@ The fetch API will also be covered in an advanced JavaScript course to come. In 
 Indeed, Web Storage provides two interfaces - sessionStorage and localStorage - whose main difference is data longevity. This specification defines an API for persistent data storage of key-value pair data in Web clients.
 
 With localStorage the data will remain until it is deleted, whereas with sessionStorage the data is erased when the tab/browser is closed.
+
+-
+<form onsubmit="return formSubmitted();">
+... will call the formSubmitted function when the form is submitted. It is interesting that we use onclick="return formSubmitted();":
+
+If the returned value is true, the form will be submitted by your browser (this would reload the HTML page).
+If the returned value is false, the form will not be submitted (this is what we want, so we will return false in the formSubmitted function).
