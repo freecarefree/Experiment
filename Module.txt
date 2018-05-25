@@ -490,3 +490,6 @@ If the returned value is false, the form will not be submitted (this is what we 
 Classes are not types!
 
 Numerous predefined classes exist such as Date, Array, String, Math, etc. But they are not types. Types are string, number, object, etc. Types are returned by the typeof operator and describe the type of value. Variables do not have types, values have types.
+
+-
+Description. let allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. This is unlike the var keyword, which defines a variable globally, or locally to an entire function regardless of block scope.
