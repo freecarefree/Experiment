@@ -493,3 +493,12 @@ Numerous predefined classes exist such as Date, Array, String, Math, etc. But th
 
 -
 Description. let allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. This is unlike the var keyword, which defines a variable globally, or locally to an entire function regardless of block scope.
+
+-
+in js
+Can we pass a variable number of arguments to a function?
+
+Arity is not checked at invocation.
+Missing arguments become undefined.
+Superfluous arguments are ignored
+However all arguments (even superfluous) can be obtained through the pseudo-array arguments in the body of the function.
