@@ -502,3 +502,6 @@ Arity is not checked at invocation.
 Missing arguments become undefined.
 Superfluous arguments are ignored
 However all arguments (even superfluous) can be obtained through the pseudo-array arguments in the body of the function.
+
+-let a = [ 'michel', 'buffa', [5+6, 'buffa'] ];
+How is this expression evaluated: (a[1] === a[2, 1]) ====== True
