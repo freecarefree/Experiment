@@ -485,3 +485,8 @@ With localStorage the data will remain until it is deleted, whereas with session
 
 If the returned value is true, the form will be submitted by your browser (this would reload the HTML page).
 If the returned value is false, the form will not be submitted (this is what we want, so we will return false in the formSubmitted function).
+
+-
+Classes are not types!
+
+Numerous predefined classes exist such as Date, Array, String, Math, etc. But they are not types. Types are string, number, object, etc. Types are returned by the typeof operator and describe the type of value. Variables do not have types, values have types.
