@@ -506,4 +506,3 @@ However all arguments (even superfluous) can be obtained through the pseudo-arra
 
 -let a = [ 'michel', 'buffa', [5+6, 'buffa'] ];
 How is this expression evaluated: (a[1] === a[2, 1]) ====== True
-// is git still working here?
