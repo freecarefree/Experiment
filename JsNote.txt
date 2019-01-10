@@ -1,0 +1,508 @@
+﻿Microsoft Professional Orientation : Front End Web Development
+Erika Johnson
+
+=====
+Visit http://html5test.com
+
+Scroll through the page and note the supported aspects of the browser
+
+Visit quirksmode.org and investigate some the current compatibility tables which list the major browsers and versions
+
+Visit http://www.w3.org/standards/webdesign/. On this page, you will find links to the standards set forth by the W3C, the organization tasked with managing the standards for HTML and CSS.
+
+Click the HTML & CSS link and review the material listed for these two web technologies.
+
+While you don't need to read the specification or be an expert on it, visit http://www.ecma-international.org/publications/standards/Ecma-262.htm to learn more about what ECMA is and how it relates to JavaScript and the JavaScript standard.
+====
+
+Notepad++ for windows
+
+Sublime3 for macOS and Windows
+
+=======
+
+http://jsbin.com/?html,output  good resource, like codepen
+
+W3C validators
+W3C Developers home pageFor over 15 years, the W3C has been developing and hosting free and open source tools used every day by millions of Web developers and Web designers. All the tools listed below are Web-based, and are available as downloadable sources or as free services on the W3C Developers tools site.
+
+https://www.w3.org/2009/cheatsheet/  
+provides quick access to useful information from a variety of specifications published by W3C.
+
+https://www.w3.org/WAI/eval/preliminary#media
+
+
+===
+I18N
+
+Encoding: use the UTF-8 (Unicode) character encoding for content, databases, etc. Always declare the encoding.
+Language: declare the language of documents and indicate internal language changes.
+Navigation: on each page include clearly visible navigation to localized pages or sites, using the target language.
+Escapes: use characters rather than escapes (e.g. &#xE1; &#225; or &aacute;) whenever you can.
+Forms: use UTF-8 on both form and server. Support local formats of names/addresses, times/dates, etc.
+Localizable styling: use CSS styling for the presentational aspects of your page. So that it's easy to adapt content to suit the typographic needs of the audience, keep a clear separation between styling and semantic content, and don't use 'presentational' markup.
+Images, animations & examples: if your content will be seen by people from diverse cultures, check for translatability and inappropriate cultural bias.
+
+
+====
+These elements, without a "/" at the end, are called "void elements". They are : area, base, br, col, embed, hr, img, input, link, menuitem, meta, param, source, track, wbr.
+
+
+====
+
+https://d3js.org/
+
+D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
+
+==
+
+( )	Round brackets or parentheses	
+{ }	Curly brackets or braces	
+[ ]	Square brackets or simply brackets (US)
+
+====
+AWS Cloud9
+https://aws.amazon.com/cloud9/?origin=c9io
+
+=======
+
+===== NOW I AM ON WIN10 PC LOL =====
+// <body onload="init();"/>
+// window.addEventListener('load', init);
+
+window.onload = init;
+
+function init() {
+  var status = document.querySelector('#pageStatus');
+  status.innerHTML = 'LOADED!';
+  
+  // start working!
+  // ....
+}
+
+  progressBar = document.querySelector(".progress div");
+
+  window.addEventListener("scroll", function() {
+      var max = document.body.scrollHeight - window.innerHeight;
+      var percent = (window.pageYOffset / max) * 100;
+      progressBar.style.width = percent + "%";
+  });
+
+
+<input type="text" 
+         name="nom" 
+         maxlength="32" 
+         required
+         oninput = "validateName(this)" onselect = "myFunction(event)">
+
+// “this” and “event” have meaning behind them. have to be this way!!!
+
+=============
+For slider:
+<input type="range" 
+         min=1
+         max=12
+          step=0.1
+         oninput = "doSomething(event)">   oninput and onchange are different!
+
+Event object
+Most useful common properties:
+
+type	Returns the name of the event
+target	Returns the element that triggered the event
+
+Most useful common methods:
+
+preventDefault()	Cancels the event if it is cancelable, meaning that the default 			action that belongs to the event will not occur
+stopPropagation()	Prevents further propagation of an event during event flow
+
+- In JavaScript, the DOM is accessible through the property document of the global object window. We rarely manipulate the window object directly as it is implicit: window.document is the same as document. 
+
+-With the DOM API (old fashioned)
+These methods are from the DOM API and can all be replaced by the querySelector and querySelectorAll methods that we've discussed. They are still used in many JavaScript applications, and are very simple to understand.
+
+From the document we can access the elements composing our web page in a few ways:
+
+document.getElementById(identifier) returns the element which has the id “identifier”.
+This is equivalent to document.querySelector("#identifier'); (just add a # before the id when using a CSS selector). 
+
+Example: var elm = document.getElementById('myDiv'); is equivalent to document.querySelector('#myDiv');
+
+document.getElementsByTagName(tagName) returns a list of elements which are named “tagName”.
+This is equivalent to document.querySelectorAll(tagName);
+
+Example: var list = document.getElementByTagName('img'); is equivalent to document.querySelector('img');
+
+document.getElementsByClassName(className) returns a list of elements which have the class “className”.
+This is equivalent to document.querySelectorAll('.className'); 
+
+Example: var list = document.getElementByClassName('important'); is equivalent to document.querySelector('.important'); (just add a '.' before the class name when using a CSS selector). 
+
+Notice that identifier, tagName and className must be of type String. 
+
+
+
+- // get the li parent of the current selected input
+    var liParent = elm.parentNode;
+    // add the CSS class .checked
+    liParent.classList.add("checked");
+
+-Properties that can be used to change the value of selected DOM node
+Using the innerHTML property
+Using the textContent property
+
+- Best practice when using the canvas:
+
+Use a function that is called AFTER the page is fully loaded (and the DOM is ready), select the canvas in the DOM (this is the init function (as in window.onload = init) we already saw many times).
+Then, get a 2D graphic context for this canvas (the context is an object we will use to draw on the canvas, to set global properties such as color, gradients, patterns and line width).
+Only then can you can draw something,
+Do not forget to use global variables for the canvas and context objects. I also recommend keeping the width and height of the canvas somewhere. These might be useful later.
+For each function that will change the context (color, line width, coordinate system, etc.), start by saving the context, and end by restoring it.
+
+-
+function drawFilledCircle(c) {
+    // GOOD practice: save the context, use 2D trasnformations
+    ctx.save();
+  
+    // translate the coordinate system, draw relative to it
+    ctx.translate(c.x, c.y);
+  
+    ctx.fillStyle = c.color;
+    // (0, 0) is the top left corner of the monster.
+    ctx.beginPath();
+    ctx.arc(0, 0, c.radius, 0, 2*Math.PI);
+    ctx.fill();
+ 
+    // GOOD practice: restore the context
+    ctx.restore();
+}
+
+==
+window.onload = function init() {
+    // called AFTER the page has been loaded
+    canvas = document.querySelector("#myCanvas");
+  
+    // often useful
+    w = canvas.width; 
+    h = canvas.height;  
+  
+    // important, we will draw with this object
+    ctx = canvas.getContext('2d');
+  
+    // ready to go !
+    mainLoop();
+};
+
+function mainLoop() {
+  // 1 - clear the canvas
+  ctx.clearRect(0, 0, w, h);
+  
+  // draw the ball and the player
+  drawFilledRectangle(player);
+  drawFilledCircle(ball1);
+  drawFilledCircle(ball2);
+  drawFilledCircle(ball3);
+
+  // animate the ball that is bouncing all over the walls
+  moveBall(ball1);
+  moveBall(ball2);
+  moveBall(ball3);
+  
+  // ask for a new animation frame
+  requestAnimationFrame(mainLoop);
+}
+
+=
+function moveAllBalls(ballArray) {
+    // iterate on all balls in array
+    ballArray.forEach(function(b) {
+        // b is the current ball in the array
+        b.x += b.speedX;
+        b.y += b.speedY;
+        testCollisionBallWithWalls(b);
+    });
+}
+
+==
+
+function getMousePos(canvas, evt) {
+   // necessary to take into account CSS boundaries
+   var rect = canvas.getBoundingClientRect();
+   return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+   };
+}
+==
+1 - Iterating using the forEach method
+The forEach method takes a single argument that is a function/callback that can have one, two or three parameters:
+
+The first parameter is the current element of the array,
+The second parameter (optional) is the index of the current element in the array,
+The third element is the array itself
+
+--- company pc lol---
+— ok, got it!—
+Media - webcam:
+version one:
+window.onload = init;
+function init() {
+   navigator.getUserMedia ({video: true, audio: false}, success, error);
+}
+
+// successCallback
+function success(localMediaStream) {
+  var video = document.querySelector('video');
+  video.src = window.URL.createObjectURL(localMediaStream);
+  // Do something with the video here, e.g. video.play()
+}
+
+// errorCallback
+function error(err) {
+  console.log("The following error occured: " + err);
+}
+
+version two:
+function init() {
+   navigator.mediaDevices.getUserMedia({audio: false,video: true})
+     .then(function (stream) {
+	       var video = document.querySelector('#video');
+	       video.src = URL.createObjectURL(stream);
+	       video.play();
+      })
+     .catch(function(err) {
+        alert("something went wrong: " + err)
+   });
+}
+
+—- geo location -
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    displayCoords.innerHTML="Geolocation API not supported by your browser.";
+  }
+}
+  
+  
+function showPosition(position) {
+ displayCoords.innerHTML="Latitude: " + position.coords.latitude + 
+  "<br />Longitude: " + position.coords.longitude;	
+}
+
+—
+var geocoder = new google.maps.Geocoder();
+geocoder.geocode({'latLng': latlng},reverseGeocoderSuccess);
+      function reverseGeocoderSuccess(results, status) {
+	…
+	}
+
+——
+https://howlerjs.com/ 
+howler.js makes working with audio in JavaScript easy and reliable across all platforms.
+
+—
+Properties correspond to an object's DNA (its characteristics), 
+and are nouns (age, name, etc.)
+
+Methods correspond to an object's behavior 
+and are verbs (bark, move, changeSpeed, etc.)
+
+—
+function getMousePos(canvas, evt) {
+    // necessary work in the canvas coordinate system
+    var rect = canvas.getBoundingClientRect();
+    return {
+        x: evt.clientX - rect.left,
+        y: evt.clientY - rect.top
+    };
+}
+
+-
+Static methods are called without instantiating their class 
+and can not be called through a class instance. 
+// static property definition is necessarily outside of the class with ES6
+Point.nbPointsCreated=0;
+
+
+https://hacks.mozilla.org/2014/08/black-box-driven-development-in-javascript/
+
+-
+In JavaScript, you can call a function BEFORE it has been declared in your source code. This is called "hoisting": it's like if all function declarations were moved to the top before being executed. It works and it's correct.
+
+-
+The static keyword defines a static method for a class.
+Static methods are called without instantiating their class and cannot be called through a class instance.
+Consequence: do not use instance properties in their body!
+Static methods are often used to create utility functions for an application
+
+-
+The Window Object. The window object is supported by all browsers. It represents the browser's window. All global JavaScript objects, functions, and variables automatically become members of the window object.
+
+However, at the top level of programs and functions, 
+let, unlike var, does not create a property on the global window object.
+
+-
+What are the datatypes in JavaScript?
+According to the latest ECMAScript release, these are the data types:
+Boolean.
+Null.
+Undefined.
+Number.
+String.
+Symbol.
+Object.
+
+-
+Most useful methods you can use on arrays: sort(), join(), slice(), splice(), push()and pop()
+sort: sort the elements in the array. Either alphabetically if they are strings, or in ascending order if they are numbers. There is also a way to sort the elements using other criteria, which is explained a bit further on in the course. With a call to var b = a.sort(), a is also sorted. The sort method sorts the array + returns it.
+join: adds a string between each element and returns the result as a string
+slice: returns a sub-array without modifying the original array
+splice: modifies the array, it removes “a slice” and it also adds new elements
+push: appends an element at the end of the array and returns the new length
+pop: removes the last element and returns it
+
+The splice() method modifies the array: it removes “a slice” and also adds new elements
+The first two parameters are start and the number of elements to delete, the other parameters are the elements to add to the array to replace the slice that will be removed.
+
+Possible syntaxes:
+
+array.splice(start)
+array.splice(start, deleteCount)
+array.splice(start, deleteCount, item1, item2, ...)
+start: index at which to start changing the array (with origin 0)
+
+deleteCount: An integer indicating the number of old array elements to remove.
+
+Methods useful for converting numbers: toFixed(), toExponential(), toString()
+toFixed: sets the number of digits for the decimal part of a number. 
+There is also another method, named toPrecision, that has a very close behavior, and can also return numbers in scientific notation. 
+toExponential: force a number to use a scientific notation. For example var a=1000; a.toExponential(); console.log(a); will give 1e+3
+
+s.split(' ').join('.......');
+"My.......name.......is.......Bond!.......James.......Bond!"
+
+-
+The TableRow object (<tr>)
+When you look for a row using the DOM API or the selector API, or when you create a row using the DOM API, you get a Row object:
+
+var row1 = document.getElementById("row1");
+ 
+var row1 = document.querySelector("#row1");
+ 
+var newRow = document.createElement("row"); // creates a new row
+
+Like all objects, a TableRow object has properties and methods. Here are the most useful ones:
+
+Most useful properties
+cells Returns a collection of all <td> or <th> elements in a table row
+rowIndex  Returns the position of a row in the rows collection of a table
+sectionRowIndex Returns the position of a row in the rows collection of a <tbody>, <thead>, or <tfoot>
+
+Since HTML5 provides functionalities to assist with accessibility, developers should make a concerted effort to mark up Web based forms. The following two guidelines are to give you a good start to make your forms accessible:
+
+1 For every form field, ensure that a descriptive label is provided and use the <label> element to identify each form control.
+2 For larger or complex forms, use the <fieldset> and <legend> elements to respectively group and associate related form controls.
+
+What is JSON?
+JSON stands for JavaScript Object Notation. It's a standard for transforming nearly any object into a string representation that is human readable. It became a standard for exchanging data to/from a remote HTTP server, and is available for many other languages in addition to JavaScript.
+
+A JavaScript object o in JSON looks a lot like what o.toString() returns.
+
+There are two main methods to know:
+
+Transform any JavaScript object in JSON:                      
+var jsonStr = JSON.stringify(obj);
+Transform any JSON string into a JavaScript object:    
+var jsObj  = JSON.parse(jsonStr);
+
+-
+To avoid including inherited properties in your enumeration, check hasOwnProperty():
+
+for (var name in myObject) {
+  if (myObject.hasOwnProperty(name)) {
+    alert(name);
+  }
+}
+
+JSON data from a REST WebService
+Most "big sites" provide what we call a REST API. This means "they propose to send/receive data to/from programs over HTTP", and most of the time the JSON format is one of the possible transport formats for the data. Google APIs, Facebook and Amazon APIs are like this.
+
+JSONPlaceholder is a free online REST service that you can use whenever you need some fake data in JSON. Faking a server is great for tutorials, and this is exactly what the next example does. 
+
+-
+JavaScript source code extract:
+
+function search() {
+    var queryURL = "https://jsonplaceholder.typicode.com/users";
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', queryURL, true);
+ 
+    // called when the response has arrived
+    xhr.onload = function(e) {
+        var jsonResponse = this.response;
+ 
+        // turn the response into a JavaScript object
+        var users = JSON.parse(jsonResponse);
+        displayUsersAsATable(users);
+    }
+    // in case of error
+    xhr.onerror = function(err) {
+        console.log("Error: " + err);
+    }
+    // sends the request
+    xhr.send();
+}
+-
+JavaScript source code extract:
+
+function search() {
+    var queryURL = "https://jsonplaceholder.typicode.com/users";
+    fetch(queryURL)
+      .then(function(response) {
+          // response is a json string,
+          // convert it to a pure JavaScript object
+          return response.json();
+      })
+      .then(function(users) {
+          // users is a JavaScript object here
+          displayUsersAsATable(users)
+      })
+      .catch(function(error) {
+          console.log('Error during fetch: ' + error.message);
+      });
+}
+The fetch API will also be covered in an advanced JavaScript course to come. In contrast to XhR2, fetch is based on a concept called "JavaScript promises" (also covered in the advanced course!). You recognize promises when you see ".then..." ".then...".
+
+-
+Indeed, Web Storage provides two interfaces - sessionStorage and localStorage - whose main difference is data longevity. This specification defines an API for persistent data storage of key-value pair data in Web clients.
+
+With localStorage the data will remain until it is deleted, whereas with sessionStorage the data is erased when the tab/browser is closed.
+
+-
+<form onsubmit="return formSubmitted();">
+... will call the formSubmitted function when the form is submitted. It is interesting that we use onclick="return formSubmitted();":
+
+If the returned value is true, the form will be submitted by your browser (this would reload the HTML page).
+If the returned value is false, the form will not be submitted (this is what we want, so we will return false in the formSubmitted function).
+
+-
+Classes are not types!
+
+Numerous predefined classes exist such as Date, Array, String, Math, etc. But they are not types. Types are string, number, object, etc. Types are returned by the typeof operator and describe the type of value. Variables do not have types, values have types.
+
+-
+Description. let allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. This is unlike the var keyword, which defines a variable globally, or locally to an entire function regardless of block scope.
+variables declared by let and const have a block scope
+
+-
+in js
+Can we pass a variable number of arguments to a function?
+
+Arity is not checked at invocation.
+Missing arguments become undefined.
+Superfluous arguments are ignored
+However all arguments (even superfluous) can be obtained through the pseudo-array arguments in the body of the function.
+
+-let a = [ 'michel', 'buffa', [5+6, 'buffa'] ];
+How is this expression evaluated: (a[1] === a[2, 1]) ====== True
