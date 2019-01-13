@@ -511,3 +511,10 @@ How is this expression evaluated: (a[1] === a[2, 1]) ====== True
 
 ======================================
 innerText will not include text that is hidden by CSS, but textContent will.
+
+-select multiple elements
+getElementsByClassName
+getElementByTagName
+
+An HTMLCollection object is an array-like list of HTML elements.
+Array.from(HTMLCollection)
