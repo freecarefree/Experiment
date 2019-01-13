@@ -506,3 +506,8 @@ However all arguments (even superfluous) can be obtained through the pseudo-arra
 
 -let a = [ 'michel', 'buffa', [5+6, 'buffa'] ];
 How is this expression evaluated: (a[1] === a[2, 1]) ====== True
+
+
+
+======================================
+innerText will not include text that is hidden by CSS, but textContent will.
