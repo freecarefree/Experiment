@@ -512,9 +512,15 @@ How is this expression evaluated: (a[1] === a[2, 1]) ====== True
 ======================================
 innerText will not include text that is hidden by CSS, but textContent will.
 
+-select single element
+querySelector
+
 -select multiple elements
 getElementsByClassName
 getElementByTagName
+querySelectorAll
+
+The Document method querySelectorAll() returns a static (not live) NodeList representing a list of the document's elements that match the specified group of selectors.
 
 An HTMLCollection object is an array-like list of HTML elements.
 Array.from(HTMLCollection)
