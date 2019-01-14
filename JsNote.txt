@@ -565,6 +565,7 @@ document.querySelector('ul.collection').appendChild(li);
 console.log(li);
 
 className  classList 
+classList.contains('delete-item')
 
 e (event)
 clientX/Y  offsetX/Y
@@ -572,3 +573,8 @@ e.preventDefault(); e.type
 
 ele.addEventListener('focus', runEvent);  ----> 'blur'    cut event (ctrl+X)  paste
 select - changeEvent
+
+devent bubbling & delegation
+localStorage.setItem('name', 'John');
+// clear local storage
+localStorage.clear();
