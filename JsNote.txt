@@ -563,3 +563,12 @@ li.appendChild(link);
 document.querySelector('ul.collection').appendChild(li);
 
 console.log(li);
+
+className  classList 
+
+e (event)
+clientX/Y  offsetX/Y
+e.preventDefault(); e.type
+
+ele.addEventListener('focus', runEvent);  ----> 'blur'    cut event (ctrl+X)  paste
+select - changeEvent
