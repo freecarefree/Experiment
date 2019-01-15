@@ -592,3 +592,8 @@ Most CDNs have servers all over the globe so CDN's servers may be geographically
 CDNs are already configured with proper cache settings. Using a CDN saves further configuration for static assets on your own servers.
 
 ===
+number
+isFinite(num)
+num.toFixed(2) 
+
+setTimeout(clearError, 3000); 3s
