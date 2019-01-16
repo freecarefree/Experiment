@@ -599,3 +599,5 @@ num.toFixed(2)
 setTimeout(clearError, 3000); 3s
 
 isNaN();
+
+Math.floor(Math.random()*(max-min+1)+min);
