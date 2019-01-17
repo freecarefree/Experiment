@@ -618,3 +618,13 @@ The Date.now() is an inbuilt function in JavaScript which returns the number of 
 Javascript date getTime() method returns the numeric value corresponding to the time for the specified date according to universal time. The value returned by the getTime method is the number of milliseconds since 1 January 1970 00:00:00
 getUTCFullYear()	Returns the year, according to universal time
 
+<div class="preference">
+    <label for="peas">Do you like peas?</label>
+    <input type="checkbox" name="peas" id="peas">
+</div>
+
+setTimeout(function(){
+    document.querySelector('.alert').remove();
+}, 3000);
+
+skeleton.CSS
