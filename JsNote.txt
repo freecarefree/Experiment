@@ -694,3 +694,45 @@ In a function, this refers to the global object.
 In a function, in strict mode, this is undefined.
 In an event, this refers to the element that received the event.
 Methods like call(), and apply() can refer this to any object.
+
+//Object.prototype
+//Person.prototype
+
+// Person constructor
+function Person(firstName, lastName, dob) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.birthday = new Date(dob);
+}
+
+// Calculate age
+Person.prototype.calculateAge = function() { 
+  const diff = Date.now() - this.birthday.getTime();
+  const ageDate = new Date(diff);
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+};
+
+// Get full name
+Person.prototype.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
+
+// Gets Married
+Person.prototype.getsMaried = function(newLastName) {
+  this.lastName = newLastName;
+};
+
+const john = new Person("John", "Doe", "8-12-90");
+const mary = new Person("Mary", "Johnson", "March 20 1978");
+
+mary.getsMaried("Smith");
+
+console.log(mary.getFullName());
+
+console.log(mary.hasOwnProperty("firstName"));
+console.log(mary.hasOwnProperty("getFullName"));
+
+<div class="preference">
+    <label for="peas">Do you like peas?</label>
+    <input type="checkbox" name="peas" id="peas">
+</div>
