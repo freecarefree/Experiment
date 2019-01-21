@@ -783,3 +783,8 @@ const users = ['Nathan', 'John', 'William'];
 const nameLengths = users.map(name => name.length);
 
 console.log(nameLengths);
+
+"An arrow function expression (also known as fat arrow function) has a shorter syntax compared to function expressions and lexically binds the this value (does not bind its own this, arguments, super, or new.target). Arrow functions are always anonymous."
+this in an arrow function has the same value as the context in which the arrow function was created.
+
+'lets say u are having click listener in that listener u are performing some ajax operation like setTimeout.after the time has completed the code inside the callback will get executed.inside that callback you may have accessed this for changing color of the clicked button.but the control will be out of that context due to ajax operation.so you cannot access this.so es6 introduced arrow function to fix tat problem '
