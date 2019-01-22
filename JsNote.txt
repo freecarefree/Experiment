@@ -868,3 +868,6 @@ async function getUsers() {
 
 getUsers().then(users => console.log(users));
 
+The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+
+A different event, load, should be used only to detect a fully-loaded page. It is a very common mistake to use load where DOMContentLoaded would be much more appropriate, so be cautious.
