@@ -788,3 +788,6 @@ console.log(nameLengths);
 this in an arrow function has the same value as the context in which the arrow function was created.
 
 'lets say u are having click listener in that listener u are performing some ajax operation like setTimeout.after the time has completed the code inside the callback will get executed.inside that callback you may have accessed this for changing color of the clicked button.but the control will be out of that context due to ajax operation.so you cannot access this.so es6 introduced arrow function to fix tat problem '
+
+THIS:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
