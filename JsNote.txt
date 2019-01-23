@@ -872,3 +872,5 @@ The DOMContentLoaded event fires when the initial HTML document has been complet
 
 A different event, load, should be used only to detect a fully-loaded page. It is a very common mistake to use load where DOMContentLoaded would be much more appropriate, so be cautious.
 
+The blur event fires when an element has lost focus. The main difference between this event and focusout is that only the latter bubbles.
+
