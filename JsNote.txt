@@ -965,3 +965,5 @@ EventObserver.prototype = {
 }
 
 const click = new EventObserver();
+
+document.addEventListener('DOMContentLoaded', getPosts);
