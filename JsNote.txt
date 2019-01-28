@@ -967,3 +967,6 @@ EventObserver.prototype = {
 const click = new EventObserver();
 
 document.addEventListener('DOMContentLoaded', getPosts);
+
+Json Server:
+https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d
