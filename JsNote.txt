@@ -979,3 +979,5 @@ fontawesome
 REACT
 
 React.Fragment
+
+Just as you pass objects to setState(), you can also pass functions
