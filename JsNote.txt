@@ -1022,3 +1022,5 @@ async componentDidMount(){
   const res=await axios.get('...');
   this.setState({...});
 }
+
+context API vs Redux
