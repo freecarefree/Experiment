@@ -1017,3 +1017,8 @@ componentWillReceiveProps(nextProps, nextState) {
 }
 
 Will's are going to be deprecated.
+
+async componentDidMount(){
+  const res=await axios.get('...');
+  this.setState({...});
+}
