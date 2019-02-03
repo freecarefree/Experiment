@@ -976,8 +976,18 @@ fontawesome
 
 =================================================================
 
-REACT
+REACT 
 
 React.Fragment
 
 Just as you pass objects to setState(), you can also pass functions
+<input
+  value={email}
+  onChange={this.onChange}
+/>
+onChange=e=>this.setState( {[e.target.name]:e.target.value});
+
+npm i uuid
+npm i react-router-dom 
+
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
