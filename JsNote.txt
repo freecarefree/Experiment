@@ -994,3 +994,10 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 ifc:
 {props.match.params.name}
+
+this.props.history.push('/');
+
+import {Link} from 'react-router-dom';
+<Link to="/">
+  <i className="fas fa-home" /> Home
+</Link>
