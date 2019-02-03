@@ -989,6 +989,7 @@ onChange=e=>this.setState( {[e.target.name]:e.target.value});
 
 npm i uuid
 npm i react-router-dom 
+npm i axios
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
@@ -1001,3 +1002,18 @@ import {Link} from 'react-router-dom';
 <Link to="/">
   <i className="fas fa-home" /> Home
 </Link>
+
+Lifecycle methods:
+render 
+componentDidMount(){
+ //ajax
+}
+componentWillMount(){
+
+}
+componentDidUpdate componentWillUpdate 
+componentWillReceiveProps(nextProps, nextState) {
+
+}
+
+Will's are going to be deprecated.
