@@ -1024,3 +1024,7 @@ async componentDidMount(){
 }
 
 context API vs Redux
+
+Github Pages  BrowserRouter -> HashRouter
+
+npm i gh-pages
