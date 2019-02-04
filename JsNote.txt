@@ -1028,3 +1028,4 @@ context API vs Redux
 Github Pages  BrowserRouter -> HashRouter
 
 npm i gh-pages
+npm i redux react-rudux redux-thunk
