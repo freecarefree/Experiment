@@ -1046,3 +1046,7 @@ Other characters will remain unchanged. This means that any hyphen that is not f
 The attributes can then be accessed using the camelCase name stored in the object as a key like element.dataset.keyname.
 
 Another way of accessing the attributes is using bracket notation, like element.dataset[keyname]
+
+Array high order method, reduce.
+
+getDerivedStateFromProps(props, state)
