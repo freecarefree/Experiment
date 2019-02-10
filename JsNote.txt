@@ -1050,3 +1050,8 @@ Another way of accessing the attributes is using bracket notation, like element.
 Array high order method, reduce.
 
 getDerivedStateFromProps(props, state)
+
+React  - 
+
+import classnames from 'classnames';
+
