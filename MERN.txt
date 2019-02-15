@@ -8,3 +8,6 @@ npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjs v
 
 npm i -D nodemon
 
+const mongoose = require('mongoose');
+const app = express();
+promise:  mongoose.connect(db) ..
